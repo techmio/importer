@@ -1,0 +1,1540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OTModel.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="OT_APP1">
+          <Key>
+            <PropertyRef Name="APP1_ID" />
+          </Key>
+          <Property Name="APP1_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP1_NO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CYCLE_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="ORG_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="STATUS" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="STATUS_FROM" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP_TYPE" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="WORKFLOW_ID" Type="varchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="OT_APP2">
+          <Key>
+            <PropertyRef Name="APP2_ID" />
+          </Key>
+          <Property Name="APP2_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP2_NO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CYCLE_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="ORG_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="STATUS" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="STATUS_FROM" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP_TYPE" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="WORKFLOW_ID" Type="varchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="OT_APP3">
+          <Key>
+            <PropertyRef Name="APP3_ID" />
+          </Key>
+          <Property Name="APP3_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP3_NO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CYCLE_ID" Type="varchar2" MaxLength="50" />
+          <Property Name="ORG_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="OFFSET_TIME" Type="number" Precision="11" Scale="3" />
+          <Property Name="STATUS" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="STATUS_FROM" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP_TYPE" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="CANCEL" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="WORKFLOW_ID" Type="varchar2" MaxLength="50" />
+          <Property Name="LEAF_OFF_SET_HOURS" Type="number" Precision="5" Scale="2" />
+        </EntityType>
+        <EntityType Name="OT_APP4">
+          <Key>
+            <PropertyRef Name="APP4_ID" />
+          </Key>
+          <Property Name="APP4_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP4_NO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="STATUS" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="STATUS_FROM" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP_TYPE" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="APP3_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="WORKFLOW_ID" Type="varchar2" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="OT_AUDIT">
+          <Key>
+            <PropertyRef Name="AUDIT_ID" />
+          </Key>
+          <Property Name="AUDIT_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="SEQ_ID" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="AUDITER" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="REMARKS" Type="varchar2" MaxLength="1000" />
+          <Property Name="STATUS" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="APP_TYPE" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_CYCLE">
+          <Key>
+            <PropertyRef Name="CYCLE_ID" />
+          </Key>
+          <Property Name="CYCLE_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="START_DATE" Type="date" />
+          <Property Name="END_DATE" Type="date" />
+          <Property Name="FROM_DATE" Type="date" />
+          <Property Name="TO_DATE" Type="date" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_CYCLE_PAYFILE">
+          <Key>
+            <PropertyRef Name="CYCLE_PAYFILE_ID" />
+          </Key>
+          <Property Name="CYCLE_PAYFILE_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CYCLE_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="OT_FILE" Type="blob" />
+          <Property Name="CREATE_DATE" Type="date" Nullable="false" />
+          <Property Name="UPLOAD_DATE" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_EMP">
+          <Key>
+            <PropertyRef Name="EMP_ID" />
+          </Key>
+          <Property Name="EMP_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="USER_ID" Type="varchar2" MaxLength="50" />
+          <Property Name="EMP_NAME" Type="varchar2" MaxLength="150" />
+          <Property Name="EMP_NUMBER" Type="varchar2" MaxLength="60" />
+          <Property Name="EMP_SEX" Type="varchar2" MaxLength="30" />
+          <Property Name="EMP_START_DATE" Type="date" />
+          <Property Name="EMP_MAIL" Type="varchar2" MaxLength="240" />
+          <Property Name="EMP_LEAVE_DATE" Type="date" />
+          <Property Name="EMP_GRADE" Type="varchar2" MaxLength="10" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="38" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_OFFSET">
+          <Key>
+            <PropertyRef Name="OFFSET_ID" />
+          </Key>
+          <Property Name="OFFSET_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="OFFSET_NO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="START_DATE" Type="date" />
+          <Property Name="END_DATE" Type="date" />
+          <Property Name="OFFSET_TIME" Type="number" Precision="10" Scale="3" />
+          <Property Name="OFFSET_DATE" Type="date" />
+          <Property Name="EMP_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="ORG_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="APP3_ID" Type="varchar2" MaxLength="50" />
+          <Property Name="OFFSET_REMARK" Type="varchar2" MaxLength="2000" />
+        </EntityType>
+        <EntityType Name="OT_ORG">
+          <Key>
+            <PropertyRef Name="ORG_ID" />
+          </Key>
+          <Property Name="ORG_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="ORG_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="ORG_NAME" Type="varchar2" MaxLength="100" />
+          <Property Name="SIMPLE_NAME" Type="varchar2" MaxLength="100" />
+          <Property Name="PARANT_ORG" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="OLEVEL" Type="varchar2" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="OT_POSITION">
+          <Key>
+            <PropertyRef Name="POSITION_ID" />
+          </Key>
+          <Property Name="POSITION_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="POSITION_NAME" Type="varchar2" MaxLength="90" />
+          <Property Name="EMP_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="ORG_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="RTYPE" Type="varchar2" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_SHIFT">
+          <Key>
+            <PropertyRef Name="SHIFT_ID" />
+          </Key>
+          <Property Name="SHIFT_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="SEQ_ID" Type="number" Precision="5" Scale="0" />
+          <Property Name="SHIFT_NAME" Type="varchar2" MaxLength="100" Nullable="false" />
+          <Property Name="STATUS" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="OT_TIME" Type="number" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="OT_STYLE" Type="varchar2" MaxLength="64" />
+          <Property Name="OT_FIX" Type="varchar2" MaxLength="64" />
+        </EntityType>
+        <EntityType Name="OT_TYPE">
+          <Key>
+            <PropertyRef Name="TYPE_ID" />
+          </Key>
+          <Property Name="TYPE_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="TYPE_NAME" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="STATUS" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="TYPE_NUMBER" Type="number" Precision="3" Scale="0" />
+        </EntityType>
+        <EntityType Name="OT_WORK">
+          <Key>
+            <PropertyRef Name="WORK_ID" />
+          </Key>
+          <Property Name="WORK_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="WORK_NO" Type="varchar2" MaxLength="200" Nullable="false" />
+          <Property Name="EMP_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="ORG_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="START_DATE" Type="date" />
+          <Property Name="END_DATE" Type="date" />
+          <Property Name="CHECK_ON_DATE" Type="date" />
+          <Property Name="CHECK_OFF_DATE" Type="date" />
+          <Property Name="HOURS" Type="number" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="SHIFT_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="TIMES" Type="number" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="PAY_TYPE" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="OT_TYPE" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="REASON" Type="varchar2" MaxLength="200" />
+          <Property Name="REMARK" Type="varchar2" MaxLength="200" />
+          <Property Name="CREATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="CREATE_DATE" Type="date" />
+          <Property Name="UPDATE_BY" Type="varchar2" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="date" />
+          <Property Name="VERSION_NUM" Type="number" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="APP1_ID" Type="varchar2" MaxLength="50" />
+          <Property Name="APP2_ID" Type="varchar2" MaxLength="50" />
+          <Property Name="HOURS_UPDATE" Type="number" Precision="10" Scale="2" />
+          <Property Name="CREATE_TYPE" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="REF_WORK_ID" Type="varchar2" MaxLength="50" />
+          <Property Name="DEL_STATUS" Type="varchar2" MaxLength="10" Nullable="false" />
+          <Property Name="ACHIVE_DATE" Type="date" />
+        </EntityType>
+        <EntityType Name="OT_WORK_OFFSET">
+          <Key>
+            <PropertyRef Name="WORK_OFFSET" />
+          </Key>
+          <Property Name="WORK_OFFSET" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="WORK_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="OFFSET_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="OFFSET_HOURS" Type="number" Precision="5" Scale="2" />
+          <Property Name="WORK_HOURS" Type="number" Precision="5" Scale="2" />
+        </EntityType>
+        <EntityType Name="SYS_SEQ">
+          <Key>
+            <PropertyRef Name="SEQ_ID" />
+          </Key>
+          <Property Name="SEQ_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="SEQ_CODE" Type="varchar2" MaxLength="100" Nullable="false" />
+          <Property Name="SEQ_NUM" Type="number" Precision="18" Scale="0" />
+        </EntityType>
+        <Association Name="OT_APP1_OT_ORG_FK">
+          <End Role="OT_ORG" Type="Self.OT_ORG" Multiplicity="1" />
+          <End Role="OT_APP1" Type="Self.OT_APP1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_APP1">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_APP2_OT_ORG_FK">
+          <End Role="OT_ORG" Type="Self.OT_ORG" Multiplicity="1" />
+          <End Role="OT_APP2" Type="Self.OT_APP2" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_APP2">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_APP3_OT_ORG_FK">
+          <End Role="OT_ORG" Type="Self.OT_ORG" Multiplicity="1" />
+          <End Role="OT_APP3" Type="Self.OT_APP3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_APP3">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_APP4_OT_APP3_FK">
+          <End Role="OT_APP3" Type="Self.OT_APP3" Multiplicity="1" />
+          <End Role="OT_APP4" Type="Self.OT_APP4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_APP3">
+              <PropertyRef Name="APP3_ID" />
+            </Principal>
+            <Dependent Role="OT_APP4">
+              <PropertyRef Name="APP3_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_AUDIT_OT_EMP_FK">
+          <End Role="OT_EMP" Type="Self.OT_EMP" Multiplicity="1" />
+          <End Role="OT_AUDIT" Type="Self.OT_AUDIT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_EMP">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="OT_AUDIT">
+              <PropertyRef Name="AUDITER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_CYCLE_PAYFILE_FK">
+          <End Role="OT_CYCLE" Type="Self.OT_CYCLE" Multiplicity="1" />
+          <End Role="OT_CYCLE_PAYFILE" Type="Self.OT_CYCLE_PAYFILE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_CYCLE">
+              <PropertyRef Name="CYCLE_ID" />
+            </Principal>
+            <Dependent Role="OT_CYCLE_PAYFILE">
+              <PropertyRef Name="CYCLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_OFFSET_OT_APP3_FK">
+          <End Role="OT_APP3" Type="Self.OT_APP3" Multiplicity="0..1" />
+          <End Role="OT_OFFSET" Type="Self.OT_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_APP3">
+              <PropertyRef Name="APP3_ID" />
+            </Principal>
+            <Dependent Role="OT_OFFSET">
+              <PropertyRef Name="APP3_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_OFFSET_OT_EMP_FK">
+          <End Role="OT_EMP" Type="Self.OT_EMP" Multiplicity="1" />
+          <End Role="OT_OFFSET" Type="Self.OT_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_EMP">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="OT_OFFSET">
+              <PropertyRef Name="EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_OFFSET_OT_ORG_FK">
+          <End Role="OT_ORG" Type="Self.OT_ORG" Multiplicity="1" />
+          <End Role="OT_OFFSET" Type="Self.OT_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_OFFSET">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_POSITION_OT_EMP_FK">
+          <End Role="OT_EMP" Type="Self.OT_EMP" Multiplicity="1" />
+          <End Role="OT_POSITION" Type="Self.OT_POSITION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_EMP">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="OT_POSITION">
+              <PropertyRef Name="EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_POSITION_OT_ORG_FK">
+          <End Role="OT_ORG" Type="Self.OT_ORG" Multiplicity="1" />
+          <End Role="OT_POSITION" Type="Self.OT_POSITION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_POSITION">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OFFSET_OT_OFFSET_FK">
+          <End Role="OT_OFFSET" Type="Self.OT_OFFSET" Multiplicity="1" />
+          <End Role="OT_WORK_OFFSET" Type="Self.OT_WORK_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_OFFSET">
+              <PropertyRef Name="OFFSET_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK_OFFSET">
+              <PropertyRef Name="OFFSET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OFFSET_OT_WORK_FK">
+          <End Role="OT_WORK" Type="Self.OT_WORK" Multiplicity="1" />
+          <End Role="OT_WORK_OFFSET" Type="Self.OT_WORK_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_WORK">
+              <PropertyRef Name="WORK_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK_OFFSET">
+              <PropertyRef Name="WORK_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_APP1_FK">
+          <End Role="OT_APP1" Type="Self.OT_APP1" Multiplicity="0..1" />
+          <End Role="OT_WORK" Type="Self.OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_APP1">
+              <PropertyRef Name="APP1_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="APP1_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_APP2_FK">
+          <End Role="OT_APP2" Type="Self.OT_APP2" Multiplicity="0..1" />
+          <End Role="OT_WORK" Type="Self.OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_APP2">
+              <PropertyRef Name="APP2_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="APP2_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_EMP_FK">
+          <End Role="OT_EMP" Type="Self.OT_EMP" Multiplicity="1" />
+          <End Role="OT_WORK" Type="Self.OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_EMP">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_ORG_FK">
+          <End Role="OT_ORG" Type="Self.OT_ORG" Multiplicity="1" />
+          <End Role="OT_WORK" Type="Self.OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_SHIFT_FK">
+          <End Role="OT_SHIFT" Type="Self.OT_SHIFT" Multiplicity="1" />
+          <End Role="OT_WORK" Type="Self.OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_SHIFT">
+              <PropertyRef Name="SHIFT_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="SHIFT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_TYPE_FK">
+          <End Role="OT_TYPE" Type="Self.OT_TYPE" Multiplicity="1" />
+          <End Role="OT_WORK" Type="Self.OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_TYPE">
+              <PropertyRef Name="TYPE_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="OT_TYPE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OTModelStoreContainer">
+          <EntitySet Name="OT_APP1" EntityType="Self.OT_APP1" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_APP2" EntityType="Self.OT_APP2" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_APP3" EntityType="Self.OT_APP3" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_APP4" EntityType="Self.OT_APP4" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_AUDIT" EntityType="Self.OT_AUDIT" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_CYCLE" EntityType="Self.OT_CYCLE" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_CYCLE_PAYFILE" EntityType="Self.OT_CYCLE_PAYFILE" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_EMP" EntityType="Self.OT_EMP" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_OFFSET" EntityType="Self.OT_OFFSET" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_ORG" EntityType="Self.OT_ORG" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_POSITION" EntityType="Self.OT_POSITION" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_SHIFT" EntityType="Self.OT_SHIFT" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_TYPE" EntityType="Self.OT_TYPE" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_WORK" EntityType="Self.OT_WORK" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="OT_WORK_OFFSET" EntityType="Self.OT_WORK_OFFSET" Schema="OT" store:Type="Tables" />
+          <EntitySet Name="SYS_SEQ" EntityType="Self.SYS_SEQ" Schema="OT" store:Type="Tables" />
+          <AssociationSet Name="OT_APP1_OT_ORG_FK" Association="Self.OT_APP1_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_APP1" EntitySet="OT_APP1" />
+          </AssociationSet>
+          <AssociationSet Name="OT_APP2_OT_ORG_FK" Association="Self.OT_APP2_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_APP2" EntitySet="OT_APP2" />
+          </AssociationSet>
+          <AssociationSet Name="OT_APP3_OT_ORG_FK" Association="Self.OT_APP3_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_APP3" EntitySet="OT_APP3" />
+          </AssociationSet>
+          <AssociationSet Name="OT_APP4_OT_APP3_FK" Association="Self.OT_APP4_OT_APP3_FK">
+            <End Role="OT_APP3" EntitySet="OT_APP3" />
+            <End Role="OT_APP4" EntitySet="OT_APP4" />
+          </AssociationSet>
+          <AssociationSet Name="OT_AUDIT_OT_EMP_FK" Association="Self.OT_AUDIT_OT_EMP_FK">
+            <End Role="OT_EMP" EntitySet="OT_EMP" />
+            <End Role="OT_AUDIT" EntitySet="OT_AUDIT" />
+          </AssociationSet>
+          <AssociationSet Name="OT_CYCLE_PAYFILE_FK" Association="Self.OT_CYCLE_PAYFILE_FK">
+            <End Role="OT_CYCLE" EntitySet="OT_CYCLE" />
+            <End Role="OT_CYCLE_PAYFILE" EntitySet="OT_CYCLE_PAYFILE" />
+          </AssociationSet>
+          <AssociationSet Name="OT_OFFSET_OT_APP3_FK" Association="Self.OT_OFFSET_OT_APP3_FK">
+            <End Role="OT_APP3" EntitySet="OT_APP3" />
+            <End Role="OT_OFFSET" EntitySet="OT_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_OFFSET_OT_EMP_FK" Association="Self.OT_OFFSET_OT_EMP_FK">
+            <End Role="OT_EMP" EntitySet="OT_EMP" />
+            <End Role="OT_OFFSET" EntitySet="OT_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_OFFSET_OT_ORG_FK" Association="Self.OT_OFFSET_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_OFFSET" EntitySet="OT_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_POSITION_OT_EMP_FK" Association="Self.OT_POSITION_OT_EMP_FK">
+            <End Role="OT_EMP" EntitySet="OT_EMP" />
+            <End Role="OT_POSITION" EntitySet="OT_POSITION" />
+          </AssociationSet>
+          <AssociationSet Name="OT_POSITION_OT_ORG_FK" Association="Self.OT_POSITION_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_POSITION" EntitySet="OT_POSITION" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OFFSET_OT_OFFSET_FK" Association="Self.OT_WORK_OFFSET_OT_OFFSET_FK">
+            <End Role="OT_OFFSET" EntitySet="OT_OFFSET" />
+            <End Role="OT_WORK_OFFSET" EntitySet="OT_WORK_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OFFSET_OT_WORK_FK" Association="Self.OT_WORK_OFFSET_OT_WORK_FK">
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+            <End Role="OT_WORK_OFFSET" EntitySet="OT_WORK_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_APP1_FK" Association="Self.OT_WORK_OT_APP1_FK">
+            <End Role="OT_APP1" EntitySet="OT_APP1" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_APP2_FK" Association="Self.OT_WORK_OT_APP2_FK">
+            <End Role="OT_APP2" EntitySet="OT_APP2" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_EMP_FK" Association="Self.OT_WORK_OT_EMP_FK">
+            <End Role="OT_EMP" EntitySet="OT_EMP" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_ORG_FK" Association="Self.OT_WORK_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_SHIFT_FK" Association="Self.OT_WORK_OT_SHIFT_FK">
+            <End Role="OT_SHIFT" EntitySet="OT_SHIFT" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_TYPE_FK" Association="Self.OT_WORK_OT_TYPE_FK">
+            <End Role="OT_TYPE" EntitySet="OT_TYPE" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="OTEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="OT_APP1" EntityType="OTModel.OT_APP1" />
+          <EntitySet Name="OT_APP2" EntityType="OTModel.OT_APP2" />
+          <EntitySet Name="OT_APP3" EntityType="OTModel.OT_APP3" />
+          <EntitySet Name="OT_APP4" EntityType="OTModel.OT_APP4" />
+          <EntitySet Name="OT_AUDIT" EntityType="OTModel.OT_AUDIT" />
+          <EntitySet Name="OT_CYCLE" EntityType="OTModel.OT_CYCLE" />
+          <EntitySet Name="OT_CYCLE_PAYFILE" EntityType="OTModel.OT_CYCLE_PAYFILE" />
+          <EntitySet Name="OT_EMP" EntityType="OTModel.OT_EMP" />
+          <EntitySet Name="OT_OFFSET" EntityType="OTModel.OT_OFFSET" />
+          <EntitySet Name="OT_ORG" EntityType="OTModel.OT_ORG" />
+          <EntitySet Name="OT_POSITION" EntityType="OTModel.OT_POSITION" />
+          <EntitySet Name="OT_SHIFT" EntityType="OTModel.OT_SHIFT" />
+          <EntitySet Name="OT_TYPE" EntityType="OTModel.OT_TYPE" />
+          <EntitySet Name="OT_WORK" EntityType="OTModel.OT_WORK" />
+          <EntitySet Name="OT_WORK_OFFSET" EntityType="OTModel.OT_WORK_OFFSET" />
+          <AssociationSet Name="OT_APP1_OT_ORG_FK" Association="OTModel.OT_APP1_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_APP1" EntitySet="OT_APP1" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_APP1_FK" Association="OTModel.OT_WORK_OT_APP1_FK">
+            <End Role="OT_APP1" EntitySet="OT_APP1" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_APP2_OT_ORG_FK" Association="OTModel.OT_APP2_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_APP2" EntitySet="OT_APP2" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_APP2_FK" Association="OTModel.OT_WORK_OT_APP2_FK">
+            <End Role="OT_APP2" EntitySet="OT_APP2" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_APP3_OT_ORG_FK" Association="OTModel.OT_APP3_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_APP3" EntitySet="OT_APP3" />
+          </AssociationSet>
+          <AssociationSet Name="OT_APP4_OT_APP3_FK" Association="OTModel.OT_APP4_OT_APP3_FK">
+            <End Role="OT_APP3" EntitySet="OT_APP3" />
+            <End Role="OT_APP4" EntitySet="OT_APP4" />
+          </AssociationSet>
+          <AssociationSet Name="OT_OFFSET_OT_APP3_FK" Association="OTModel.OT_OFFSET_OT_APP3_FK">
+            <End Role="OT_APP3" EntitySet="OT_APP3" />
+            <End Role="OT_OFFSET" EntitySet="OT_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_AUDIT_OT_EMP_FK" Association="OTModel.OT_AUDIT_OT_EMP_FK">
+            <End Role="OT_EMP" EntitySet="OT_EMP" />
+            <End Role="OT_AUDIT" EntitySet="OT_AUDIT" />
+          </AssociationSet>
+          <AssociationSet Name="OT_CYCLE_PAYFILE_FK" Association="OTModel.OT_CYCLE_PAYFILE_FK">
+            <End Role="OT_CYCLE" EntitySet="OT_CYCLE" />
+            <End Role="OT_CYCLE_PAYFILE" EntitySet="OT_CYCLE_PAYFILE" />
+          </AssociationSet>
+          <AssociationSet Name="OT_OFFSET_OT_EMP_FK" Association="OTModel.OT_OFFSET_OT_EMP_FK">
+            <End Role="OT_EMP" EntitySet="OT_EMP" />
+            <End Role="OT_OFFSET" EntitySet="OT_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_POSITION_OT_EMP_FK" Association="OTModel.OT_POSITION_OT_EMP_FK">
+            <End Role="OT_EMP" EntitySet="OT_EMP" />
+            <End Role="OT_POSITION" EntitySet="OT_POSITION" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_EMP_FK" Association="OTModel.OT_WORK_OT_EMP_FK">
+            <End Role="OT_EMP" EntitySet="OT_EMP" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_OFFSET_OT_ORG_FK" Association="OTModel.OT_OFFSET_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_OFFSET" EntitySet="OT_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OFFSET_OT_OFFSET_FK" Association="OTModel.OT_WORK_OFFSET_OT_OFFSET_FK">
+            <End Role="OT_OFFSET" EntitySet="OT_OFFSET" />
+            <End Role="OT_WORK_OFFSET" EntitySet="OT_WORK_OFFSET" />
+          </AssociationSet>
+          <AssociationSet Name="OT_POSITION_OT_ORG_FK" Association="OTModel.OT_POSITION_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_POSITION" EntitySet="OT_POSITION" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_ORG_FK" Association="OTModel.OT_WORK_OT_ORG_FK">
+            <End Role="OT_ORG" EntitySet="OT_ORG" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_SHIFT_FK" Association="OTModel.OT_WORK_OT_SHIFT_FK">
+            <End Role="OT_SHIFT" EntitySet="OT_SHIFT" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OT_TYPE_FK" Association="OTModel.OT_WORK_OT_TYPE_FK">
+            <End Role="OT_TYPE" EntitySet="OT_TYPE" />
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+          </AssociationSet>
+          <AssociationSet Name="OT_WORK_OFFSET_OT_WORK_FK" Association="OTModel.OT_WORK_OFFSET_OT_WORK_FK">
+            <End Role="OT_WORK" EntitySet="OT_WORK" />
+            <End Role="OT_WORK_OFFSET" EntitySet="OT_WORK_OFFSET" />
+          </AssociationSet>
+          <EntitySet Name="SYS_SEQ" EntityType="OTModel.SYS_SEQ" />
+        </EntityContainer>
+        <EntityType Name="OT_APP1">
+          <Key>
+            <PropertyRef Name="APP1_ID" />
+          </Key>
+          <Property Name="APP1_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP1_NO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CYCLE_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS_FROM" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="WORKFLOW_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_ORG" Relationship="OTModel.OT_APP1_OT_ORG_FK" FromRole="OT_APP1" ToRole="OT_ORG" />
+          <NavigationProperty Name="OT_WORK" Relationship="OTModel.OT_WORK_OT_APP1_FK" FromRole="OT_APP1" ToRole="OT_WORK" />
+        </EntityType>
+        <EntityType Name="OT_APP2">
+          <Key>
+            <PropertyRef Name="APP2_ID" />
+          </Key>
+          <Property Name="APP2_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP2_NO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CYCLE_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS_FROM" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="WORKFLOW_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_ORG" Relationship="OTModel.OT_APP2_OT_ORG_FK" FromRole="OT_APP2" ToRole="OT_ORG" />
+          <NavigationProperty Name="OT_WORK" Relationship="OTModel.OT_WORK_OT_APP2_FK" FromRole="OT_APP2" ToRole="OT_WORK" />
+        </EntityType>
+        <EntityType Name="OT_APP3">
+          <Key>
+            <PropertyRef Name="APP3_ID" />
+          </Key>
+          <Property Name="APP3_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP3_NO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CYCLE_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OFFSET_TIME" Type="Decimal" Precision="11" Scale="3" />
+          <Property Name="STATUS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS_FROM" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="CANCEL" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WORKFLOW_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LEAF_OFF_SET_HOURS" Type="Decimal" Precision="5" Scale="2" />
+          <NavigationProperty Name="OT_ORG" Relationship="OTModel.OT_APP3_OT_ORG_FK" FromRole="OT_APP3" ToRole="OT_ORG" />
+          <NavigationProperty Name="OT_APP4" Relationship="OTModel.OT_APP4_OT_APP3_FK" FromRole="OT_APP3" ToRole="OT_APP4" />
+          <NavigationProperty Name="OT_OFFSET" Relationship="OTModel.OT_OFFSET_OT_APP3_FK" FromRole="OT_APP3" ToRole="OT_OFFSET" />
+        </EntityType>
+        <EntityType Name="OT_APP4">
+          <Key>
+            <PropertyRef Name="APP4_ID" />
+          </Key>
+          <Property Name="APP4_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP4_NO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS_FROM" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="APP3_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WORKFLOW_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_APP3" Relationship="OTModel.OT_APP4_OT_APP3_FK" FromRole="OT_APP4" ToRole="OT_APP3" />
+        </EntityType>
+        <EntityType Name="OT_AUDIT">
+          <Key>
+            <PropertyRef Name="AUDIT_ID" />
+          </Key>
+          <Property Name="AUDIT_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SEQ_ID" Type="Int32" Nullable="false" />
+          <Property Name="AUDITER" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="REMARKS" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP_TYPE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OT_EMP" Relationship="OTModel.OT_AUDIT_OT_EMP_FK" FromRole="OT_AUDIT" ToRole="OT_EMP" />
+        </EntityType>
+        <EntityType Name="OT_CYCLE">
+          <Key>
+            <PropertyRef Name="CYCLE_ID" />
+          </Key>
+          <Property Name="CYCLE_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="START_DATE" Type="DateTime" />
+          <Property Name="END_DATE" Type="DateTime" />
+          <Property Name="FROM_DATE" Type="DateTime" />
+          <Property Name="TO_DATE" Type="DateTime" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OT_CYCLE_PAYFILE" Relationship="OTModel.OT_CYCLE_PAYFILE_FK" FromRole="OT_CYCLE" ToRole="OT_CYCLE_PAYFILE" />
+        </EntityType>
+        <EntityType Name="OT_CYCLE_PAYFILE">
+          <Key>
+            <PropertyRef Name="CYCLE_PAYFILE_ID" />
+          </Key>
+          <Property Name="CYCLE_PAYFILE_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CYCLE_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OT_FILE" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="UPLOAD_DATE" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="OT_CYCLE" Relationship="OTModel.OT_CYCLE_PAYFILE_FK" FromRole="OT_CYCLE_PAYFILE" ToRole="OT_CYCLE" />
+        </EntityType>
+        <EntityType Name="OT_EMP">
+          <Key>
+            <PropertyRef Name="EMP_ID" />
+          </Key>
+          <Property Name="EMP_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EMP_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="EMP_NUMBER" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="EMP_SEX" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="EMP_START_DATE" Type="DateTime" />
+          <Property Name="EMP_MAIL" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+          <Property Name="EMP_LEAVE_DATE" Type="DateTime" />
+          <Property Name="EMP_GRADE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <NavigationProperty Name="OT_AUDIT" Relationship="OTModel.OT_AUDIT_OT_EMP_FK" FromRole="OT_EMP" ToRole="OT_AUDIT" />
+          <NavigationProperty Name="OT_OFFSET" Relationship="OTModel.OT_OFFSET_OT_EMP_FK" FromRole="OT_EMP" ToRole="OT_OFFSET" />
+          <NavigationProperty Name="OT_POSITION" Relationship="OTModel.OT_POSITION_OT_EMP_FK" FromRole="OT_EMP" ToRole="OT_POSITION" />
+          <NavigationProperty Name="OT_WORK" Relationship="OTModel.OT_WORK_OT_EMP_FK" FromRole="OT_EMP" ToRole="OT_WORK" />
+        </EntityType>
+        <EntityType Name="OT_OFFSET">
+          <Key>
+            <PropertyRef Name="OFFSET_ID" />
+          </Key>
+          <Property Name="OFFSET_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OFFSET_NO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="START_DATE" Type="DateTime" />
+          <Property Name="END_DATE" Type="DateTime" />
+          <Property Name="OFFSET_TIME" Type="Decimal" Precision="10" Scale="3" />
+          <Property Name="OFFSET_DATE" Type="DateTime" />
+          <Property Name="EMP_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="APP3_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OFFSET_REMARK" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_APP3" Relationship="OTModel.OT_OFFSET_OT_APP3_FK" FromRole="OT_OFFSET" ToRole="OT_APP3" />
+          <NavigationProperty Name="OT_EMP" Relationship="OTModel.OT_OFFSET_OT_EMP_FK" FromRole="OT_OFFSET" ToRole="OT_EMP" />
+          <NavigationProperty Name="OT_ORG" Relationship="OTModel.OT_OFFSET_OT_ORG_FK" FromRole="OT_OFFSET" ToRole="OT_ORG" />
+          <NavigationProperty Name="OT_WORK_OFFSET" Relationship="OTModel.OT_WORK_OFFSET_OT_OFFSET_FK" FromRole="OT_OFFSET" ToRole="OT_WORK_OFFSET" />
+        </EntityType>
+        <EntityType Name="OT_ORG">
+          <Key>
+            <PropertyRef Name="ORG_ID" />
+          </Key>
+          <Property Name="ORG_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_NUM" Type="Int32" Nullable="false" />
+          <Property Name="ORG_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SIMPLE_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PARANT_ORG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="OLEVEL" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_APP1" Relationship="OTModel.OT_APP1_OT_ORG_FK" FromRole="OT_ORG" ToRole="OT_APP1" />
+          <NavigationProperty Name="OT_APP2" Relationship="OTModel.OT_APP2_OT_ORG_FK" FromRole="OT_ORG" ToRole="OT_APP2" />
+          <NavigationProperty Name="OT_APP3" Relationship="OTModel.OT_APP3_OT_ORG_FK" FromRole="OT_ORG" ToRole="OT_APP3" />
+          <NavigationProperty Name="OT_OFFSET" Relationship="OTModel.OT_OFFSET_OT_ORG_FK" FromRole="OT_ORG" ToRole="OT_OFFSET" />
+          <NavigationProperty Name="OT_POSITION" Relationship="OTModel.OT_POSITION_OT_ORG_FK" FromRole="OT_ORG" ToRole="OT_POSITION" />
+          <NavigationProperty Name="OT_WORK" Relationship="OTModel.OT_WORK_OT_ORG_FK" FromRole="OT_ORG" ToRole="OT_WORK" />
+        </EntityType>
+        <EntityType Name="OT_POSITION">
+          <Key>
+            <PropertyRef Name="POSITION_ID" />
+          </Key>
+          <Property Name="POSITION_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="POSITION_NAME" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+          <Property Name="EMP_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="RTYPE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_EMP" Relationship="OTModel.OT_POSITION_OT_EMP_FK" FromRole="OT_POSITION" ToRole="OT_EMP" />
+          <NavigationProperty Name="OT_ORG" Relationship="OTModel.OT_POSITION_OT_ORG_FK" FromRole="OT_POSITION" ToRole="OT_ORG" />
+        </EntityType>
+        <EntityType Name="OT_SHIFT">
+          <Key>
+            <PropertyRef Name="SHIFT_ID" />
+          </Key>
+          <Property Name="SHIFT_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SEQ_ID" Type="Int16" />
+          <Property Name="SHIFT_NAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OT_TIME" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="OT_STYLE" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="OT_FIX" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_WORK" Relationship="OTModel.OT_WORK_OT_SHIFT_FK" FromRole="OT_SHIFT" ToRole="OT_WORK" />
+        </EntityType>
+        <EntityType Name="OT_TYPE">
+          <Key>
+            <PropertyRef Name="TYPE_ID" />
+          </Key>
+          <Property Name="TYPE_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE_NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="TYPE_NUMBER" Type="Int16" />
+          <NavigationProperty Name="OT_WORK" Relationship="OTModel.OT_WORK_OT_TYPE_FK" FromRole="OT_TYPE" ToRole="OT_WORK" />
+        </EntityType>
+        <EntityType Name="OT_WORK">
+          <Key>
+            <PropertyRef Name="WORK_ID" />
+          </Key>
+          <Property Name="WORK_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WORK_NO" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="EMP_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ORG_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="START_DATE" Type="DateTime" />
+          <Property Name="END_DATE" Type="DateTime" />
+          <Property Name="CHECK_ON_DATE" Type="DateTime" />
+          <Property Name="CHECK_OFF_DATE" Type="DateTime" />
+          <Property Name="HOURS" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="SHIFT_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TIMES" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="PAY_TYPE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OT_TYPE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="REASON" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" />
+          <Property Name="UPDATE_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATE_DATE" Type="DateTime" />
+          <Property Name="VERSION_NUM" Type="Int32" Nullable="false" />
+          <Property Name="APP1_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="APP2_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HOURS_UPDATE" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="CREATE_TYPE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="REF_WORK_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DEL_STATUS" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ACHIVE_DATE" Type="DateTime" />
+          <NavigationProperty Name="OT_APP1" Relationship="OTModel.OT_WORK_OT_APP1_FK" FromRole="OT_WORK" ToRole="OT_APP1" />
+          <NavigationProperty Name="OT_APP2" Relationship="OTModel.OT_WORK_OT_APP2_FK" FromRole="OT_WORK" ToRole="OT_APP2" />
+          <NavigationProperty Name="OT_EMP" Relationship="OTModel.OT_WORK_OT_EMP_FK" FromRole="OT_WORK" ToRole="OT_EMP" />
+          <NavigationProperty Name="OT_ORG" Relationship="OTModel.OT_WORK_OT_ORG_FK" FromRole="OT_WORK" ToRole="OT_ORG" />
+          <NavigationProperty Name="OT_SHIFT" Relationship="OTModel.OT_WORK_OT_SHIFT_FK" FromRole="OT_WORK" ToRole="OT_SHIFT" />
+          <NavigationProperty Name="OT_TYPE1" Relationship="OTModel.OT_WORK_OT_TYPE_FK" FromRole="OT_WORK" ToRole="OT_TYPE" />
+          <NavigationProperty Name="OT_WORK_OFFSET" Relationship="OTModel.OT_WORK_OFFSET_OT_WORK_FK" FromRole="OT_WORK" ToRole="OT_WORK_OFFSET" />
+        </EntityType>
+        <EntityType Name="OT_WORK_OFFSET">
+          <Key>
+            <PropertyRef Name="WORK_OFFSET" />
+          </Key>
+          <Property Name="WORK_OFFSET" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WORK_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OFFSET_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OFFSET_HOURS" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="WORK_HOURS" Type="Decimal" Precision="5" Scale="2" />
+          <NavigationProperty Name="OT_OFFSET" Relationship="OTModel.OT_WORK_OFFSET_OT_OFFSET_FK" FromRole="OT_WORK_OFFSET" ToRole="OT_OFFSET" />
+          <NavigationProperty Name="OT_WORK" Relationship="OTModel.OT_WORK_OFFSET_OT_WORK_FK" FromRole="OT_WORK_OFFSET" ToRole="OT_WORK" />
+        </EntityType>
+        <Association Name="OT_APP1_OT_ORG_FK">
+          <End Type="OTModel.OT_ORG" Role="OT_ORG" Multiplicity="1" />
+          <End Type="OTModel.OT_APP1" Role="OT_APP1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_APP1">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_APP1_FK">
+          <End Type="OTModel.OT_APP1" Role="OT_APP1" Multiplicity="0..1" />
+          <End Type="OTModel.OT_WORK" Role="OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_APP1">
+              <PropertyRef Name="APP1_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="APP1_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_APP2_OT_ORG_FK">
+          <End Type="OTModel.OT_ORG" Role="OT_ORG" Multiplicity="1" />
+          <End Type="OTModel.OT_APP2" Role="OT_APP2" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_APP2">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_APP2_FK">
+          <End Type="OTModel.OT_APP2" Role="OT_APP2" Multiplicity="0..1" />
+          <End Type="OTModel.OT_WORK" Role="OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_APP2">
+              <PropertyRef Name="APP2_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="APP2_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_APP3_OT_ORG_FK">
+          <End Type="OTModel.OT_ORG" Role="OT_ORG" Multiplicity="1" />
+          <End Type="OTModel.OT_APP3" Role="OT_APP3" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_APP3">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_APP4_OT_APP3_FK">
+          <End Type="OTModel.OT_APP3" Role="OT_APP3" Multiplicity="1" />
+          <End Type="OTModel.OT_APP4" Role="OT_APP4" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_APP3">
+              <PropertyRef Name="APP3_ID" />
+            </Principal>
+            <Dependent Role="OT_APP4">
+              <PropertyRef Name="APP3_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_OFFSET_OT_APP3_FK">
+          <End Type="OTModel.OT_APP3" Role="OT_APP3" Multiplicity="0..1" />
+          <End Type="OTModel.OT_OFFSET" Role="OT_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_APP3">
+              <PropertyRef Name="APP3_ID" />
+            </Principal>
+            <Dependent Role="OT_OFFSET">
+              <PropertyRef Name="APP3_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_AUDIT_OT_EMP_FK">
+          <End Type="OTModel.OT_EMP" Role="OT_EMP" Multiplicity="1" />
+          <End Type="OTModel.OT_AUDIT" Role="OT_AUDIT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_EMP">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="OT_AUDIT">
+              <PropertyRef Name="AUDITER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_CYCLE_PAYFILE_FK">
+          <End Type="OTModel.OT_CYCLE" Role="OT_CYCLE" Multiplicity="1" />
+          <End Type="OTModel.OT_CYCLE_PAYFILE" Role="OT_CYCLE_PAYFILE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_CYCLE">
+              <PropertyRef Name="CYCLE_ID" />
+            </Principal>
+            <Dependent Role="OT_CYCLE_PAYFILE">
+              <PropertyRef Name="CYCLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_OFFSET_OT_EMP_FK">
+          <End Type="OTModel.OT_EMP" Role="OT_EMP" Multiplicity="1" />
+          <End Type="OTModel.OT_OFFSET" Role="OT_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_EMP">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="OT_OFFSET">
+              <PropertyRef Name="EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_POSITION_OT_EMP_FK">
+          <End Type="OTModel.OT_EMP" Role="OT_EMP" Multiplicity="1" />
+          <End Type="OTModel.OT_POSITION" Role="OT_POSITION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_EMP">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="OT_POSITION">
+              <PropertyRef Name="EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_EMP_FK">
+          <End Type="OTModel.OT_EMP" Role="OT_EMP" Multiplicity="1" />
+          <End Type="OTModel.OT_WORK" Role="OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_EMP">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_OFFSET_OT_ORG_FK">
+          <End Type="OTModel.OT_ORG" Role="OT_ORG" Multiplicity="1" />
+          <End Type="OTModel.OT_OFFSET" Role="OT_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_OFFSET">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OFFSET_OT_OFFSET_FK">
+          <End Type="OTModel.OT_OFFSET" Role="OT_OFFSET" Multiplicity="1" />
+          <End Type="OTModel.OT_WORK_OFFSET" Role="OT_WORK_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_OFFSET">
+              <PropertyRef Name="OFFSET_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK_OFFSET">
+              <PropertyRef Name="OFFSET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_POSITION_OT_ORG_FK">
+          <End Type="OTModel.OT_ORG" Role="OT_ORG" Multiplicity="1" />
+          <End Type="OTModel.OT_POSITION" Role="OT_POSITION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_POSITION">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_ORG_FK">
+          <End Type="OTModel.OT_ORG" Role="OT_ORG" Multiplicity="1" />
+          <End Type="OTModel.OT_WORK" Role="OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ORG">
+              <PropertyRef Name="ORG_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="ORG_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_SHIFT_FK">
+          <End Type="OTModel.OT_SHIFT" Role="OT_SHIFT" Multiplicity="1" />
+          <End Type="OTModel.OT_WORK" Role="OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_SHIFT">
+              <PropertyRef Name="SHIFT_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="SHIFT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OT_TYPE_FK">
+          <End Type="OTModel.OT_TYPE" Role="OT_TYPE" Multiplicity="1" />
+          <End Type="OTModel.OT_WORK" Role="OT_WORK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_TYPE">
+              <PropertyRef Name="TYPE_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK">
+              <PropertyRef Name="OT_TYPE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OT_WORK_OFFSET_OT_WORK_FK">
+          <End Type="OTModel.OT_WORK" Role="OT_WORK" Multiplicity="1" />
+          <End Type="OTModel.OT_WORK_OFFSET" Role="OT_WORK_OFFSET" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_WORK">
+              <PropertyRef Name="WORK_ID" />
+            </Principal>
+            <Dependent Role="OT_WORK_OFFSET">
+              <PropertyRef Name="WORK_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SYS_SEQ">
+          <Key>
+            <PropertyRef Name="SEQ_ID" />
+          </Key>
+          <Property Name="SEQ_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SEQ_CODE" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SEQ_NUM" Type="Int64" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OTModelStoreContainer" CdmEntityContainer="OTEntities">
+          <EntitySetMapping Name="OT_APP1">
+            <EntityTypeMapping TypeName="OTModel.OT_APP1">
+              <MappingFragment StoreEntitySet="OT_APP1">
+                <ScalarProperty Name="WORKFLOW_ID" ColumnName="WORKFLOW_ID" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="APP_TYPE" ColumnName="APP_TYPE" />
+                <ScalarProperty Name="STATUS_FROM" ColumnName="STATUS_FROM" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+                <ScalarProperty Name="CYCLE_ID" ColumnName="CYCLE_ID" />
+                <ScalarProperty Name="APP1_NO" ColumnName="APP1_NO" />
+                <ScalarProperty Name="APP1_ID" ColumnName="APP1_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_APP2">
+            <EntityTypeMapping TypeName="OTModel.OT_APP2">
+              <MappingFragment StoreEntitySet="OT_APP2">
+                <ScalarProperty Name="WORKFLOW_ID" ColumnName="WORKFLOW_ID" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="APP_TYPE" ColumnName="APP_TYPE" />
+                <ScalarProperty Name="STATUS_FROM" ColumnName="STATUS_FROM" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+                <ScalarProperty Name="CYCLE_ID" ColumnName="CYCLE_ID" />
+                <ScalarProperty Name="APP2_NO" ColumnName="APP2_NO" />
+                <ScalarProperty Name="APP2_ID" ColumnName="APP2_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_APP3">
+            <EntityTypeMapping TypeName="OTModel.OT_APP3">
+              <MappingFragment StoreEntitySet="OT_APP3">
+                <ScalarProperty Name="LEAF_OFF_SET_HOURS" ColumnName="LEAF_OFF_SET_HOURS" />
+                <ScalarProperty Name="WORKFLOW_ID" ColumnName="WORKFLOW_ID" />
+                <ScalarProperty Name="CANCEL" ColumnName="CANCEL" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="APP_TYPE" ColumnName="APP_TYPE" />
+                <ScalarProperty Name="STATUS_FROM" ColumnName="STATUS_FROM" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="OFFSET_TIME" ColumnName="OFFSET_TIME" />
+                <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+                <ScalarProperty Name="CYCLE_ID" ColumnName="CYCLE_ID" />
+                <ScalarProperty Name="APP3_NO" ColumnName="APP3_NO" />
+                <ScalarProperty Name="APP3_ID" ColumnName="APP3_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_APP4">
+            <EntityTypeMapping TypeName="OTModel.OT_APP4">
+              <MappingFragment StoreEntitySet="OT_APP4">
+                <ScalarProperty Name="WORKFLOW_ID" ColumnName="WORKFLOW_ID" />
+                <ScalarProperty Name="APP3_ID" ColumnName="APP3_ID" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="APP_TYPE" ColumnName="APP_TYPE" />
+                <ScalarProperty Name="STATUS_FROM" ColumnName="STATUS_FROM" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="APP4_NO" ColumnName="APP4_NO" />
+                <ScalarProperty Name="APP4_ID" ColumnName="APP4_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_AUDIT">
+            <EntityTypeMapping TypeName="OTModel.OT_AUDIT">
+              <MappingFragment StoreEntitySet="OT_AUDIT">
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="APP_TYPE" ColumnName="APP_TYPE" />
+                <ScalarProperty Name="APP_ID" ColumnName="APP_ID" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+                <ScalarProperty Name="AUDITER" ColumnName="AUDITER" />
+                <ScalarProperty Name="SEQ_ID" ColumnName="SEQ_ID" />
+                <ScalarProperty Name="AUDIT_ID" ColumnName="AUDIT_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_CYCLE">
+            <EntityTypeMapping TypeName="OTModel.OT_CYCLE">
+              <MappingFragment StoreEntitySet="OT_CYCLE">
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="TO_DATE" ColumnName="TO_DATE" />
+                <ScalarProperty Name="FROM_DATE" ColumnName="FROM_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="CYCLE_ID" ColumnName="CYCLE_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_CYCLE_PAYFILE">
+            <EntityTypeMapping TypeName="OTModel.OT_CYCLE_PAYFILE">
+              <MappingFragment StoreEntitySet="OT_CYCLE_PAYFILE">
+                <ScalarProperty Name="UPLOAD_DATE" ColumnName="UPLOAD_DATE" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="OT_FILE" ColumnName="OT_FILE" />
+                <ScalarProperty Name="CYCLE_ID" ColumnName="CYCLE_ID" />
+                <ScalarProperty Name="CYCLE_PAYFILE_ID" ColumnName="CYCLE_PAYFILE_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_EMP">
+            <EntityTypeMapping TypeName="OTModel.OT_EMP">
+              <MappingFragment StoreEntitySet="OT_EMP">
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="EMP_GRADE" ColumnName="EMP_GRADE" />
+                <ScalarProperty Name="EMP_LEAVE_DATE" ColumnName="EMP_LEAVE_DATE" />
+                <ScalarProperty Name="EMP_MAIL" ColumnName="EMP_MAIL" />
+                <ScalarProperty Name="EMP_START_DATE" ColumnName="EMP_START_DATE" />
+                <ScalarProperty Name="EMP_SEX" ColumnName="EMP_SEX" />
+                <ScalarProperty Name="EMP_NUMBER" ColumnName="EMP_NUMBER" />
+                <ScalarProperty Name="EMP_NAME" ColumnName="EMP_NAME" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="EMP_ID" ColumnName="EMP_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_OFFSET">
+            <EntityTypeMapping TypeName="OTModel.OT_OFFSET">
+              <MappingFragment StoreEntitySet="OT_OFFSET">
+                <ScalarProperty Name="OFFSET_REMARK" ColumnName="OFFSET_REMARK" />
+                <ScalarProperty Name="APP3_ID" ColumnName="APP3_ID" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+                <ScalarProperty Name="EMP_ID" ColumnName="EMP_ID" />
+                <ScalarProperty Name="OFFSET_DATE" ColumnName="OFFSET_DATE" />
+                <ScalarProperty Name="OFFSET_TIME" ColumnName="OFFSET_TIME" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="OFFSET_NO" ColumnName="OFFSET_NO" />
+                <ScalarProperty Name="OFFSET_ID" ColumnName="OFFSET_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_ORG">
+            <EntityTypeMapping TypeName="OTModel.OT_ORG">
+              <MappingFragment StoreEntitySet="OT_ORG">
+                <ScalarProperty Name="OLEVEL" ColumnName="OLEVEL" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="PARANT_ORG" ColumnName="PARANT_ORG" />
+                <ScalarProperty Name="SIMPLE_NAME" ColumnName="SIMPLE_NAME" />
+                <ScalarProperty Name="ORG_NAME" ColumnName="ORG_NAME" />
+                <ScalarProperty Name="ORG_NUM" ColumnName="ORG_NUM" />
+                <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_POSITION">
+            <EntityTypeMapping TypeName="OTModel.OT_POSITION">
+              <MappingFragment StoreEntitySet="OT_POSITION">
+                <ScalarProperty Name="RTYPE" ColumnName="RTYPE" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+                <ScalarProperty Name="EMP_ID" ColumnName="EMP_ID" />
+                <ScalarProperty Name="POSITION_NAME" ColumnName="POSITION_NAME" />
+                <ScalarProperty Name="POSITION_ID" ColumnName="POSITION_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_SHIFT">
+            <EntityTypeMapping TypeName="OTModel.OT_SHIFT">
+              <MappingFragment StoreEntitySet="OT_SHIFT">
+                <ScalarProperty Name="OT_FIX" ColumnName="OT_FIX" />
+                <ScalarProperty Name="OT_STYLE" ColumnName="OT_STYLE" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="OT_TIME" ColumnName="OT_TIME" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="SHIFT_NAME" ColumnName="SHIFT_NAME" />
+                <ScalarProperty Name="SEQ_ID" ColumnName="SEQ_ID" />
+                <ScalarProperty Name="SHIFT_ID" ColumnName="SHIFT_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_TYPE">
+            <EntityTypeMapping TypeName="OTModel.OT_TYPE">
+              <MappingFragment StoreEntitySet="OT_TYPE">
+                <ScalarProperty Name="TYPE_NUMBER" ColumnName="TYPE_NUMBER" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="TYPE_NAME" ColumnName="TYPE_NAME" />
+                <ScalarProperty Name="TYPE_ID" ColumnName="TYPE_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_WORK">
+            <EntityTypeMapping TypeName="OTModel.OT_WORK">
+              <MappingFragment StoreEntitySet="OT_WORK">
+                <ScalarProperty Name="ACHIVE_DATE" ColumnName="ACHIVE_DATE" />
+                <ScalarProperty Name="DEL_STATUS" ColumnName="DEL_STATUS" />
+                <ScalarProperty Name="REF_WORK_ID" ColumnName="REF_WORK_ID" />
+                <ScalarProperty Name="CREATE_TYPE" ColumnName="CREATE_TYPE" />
+                <ScalarProperty Name="HOURS_UPDATE" ColumnName="HOURS_UPDATE" />
+                <ScalarProperty Name="APP2_ID" ColumnName="APP2_ID" />
+                <ScalarProperty Name="APP1_ID" ColumnName="APP1_ID" />
+                <ScalarProperty Name="VERSION_NUM" ColumnName="VERSION_NUM" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+                <ScalarProperty Name="REASON" ColumnName="REASON" />
+                <ScalarProperty Name="OT_TYPE" ColumnName="OT_TYPE" />
+                <ScalarProperty Name="PAY_TYPE" ColumnName="PAY_TYPE" />
+                <ScalarProperty Name="TIMES" ColumnName="TIMES" />
+                <ScalarProperty Name="SHIFT_ID" ColumnName="SHIFT_ID" />
+                <ScalarProperty Name="HOURS" ColumnName="HOURS" />
+                <ScalarProperty Name="CHECK_OFF_DATE" ColumnName="CHECK_OFF_DATE" />
+                <ScalarProperty Name="CHECK_ON_DATE" ColumnName="CHECK_ON_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+                <ScalarProperty Name="EMP_ID" ColumnName="EMP_ID" />
+                <ScalarProperty Name="WORK_NO" ColumnName="WORK_NO" />
+                <ScalarProperty Name="WORK_ID" ColumnName="WORK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_WORK_OFFSET">
+            <EntityTypeMapping TypeName="OTModel.OT_WORK_OFFSET">
+              <MappingFragment StoreEntitySet="OT_WORK_OFFSET">
+                <ScalarProperty Name="WORK_HOURS" ColumnName="WORK_HOURS" />
+                <ScalarProperty Name="OFFSET_HOURS" ColumnName="OFFSET_HOURS" />
+                <ScalarProperty Name="OFFSET_ID" ColumnName="OFFSET_ID" />
+                <ScalarProperty Name="WORK_ID" ColumnName="WORK_ID" />
+                <ScalarProperty Name="WORK_OFFSET" ColumnName="WORK_OFFSET" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SYS_SEQ">
+            <EntityTypeMapping TypeName="OTModel.SYS_SEQ">
+              <MappingFragment StoreEntitySet="SYS_SEQ">
+                <ScalarProperty Name="SEQ_NUM" ColumnName="SEQ_NUM" />
+                <ScalarProperty Name="SEQ_CODE" ColumnName="SEQ_CODE" />
+                <ScalarProperty Name="SEQ_ID" ColumnName="SEQ_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

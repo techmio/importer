@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f442802aba6d4f8f984157ba5121a98d" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="OTModel.OT_APP1" Width="1.5" PointX="3" PointY="17" />
+        <EntityTypeShape EntityType="OTModel.OT_APP2" Width="1.5" PointX="3" PointY="9" />
+        <EntityTypeShape EntityType="OTModel.OT_APP3" Width="1.5" PointX="3" PointY="21.25" />
+        <EntityTypeShape EntityType="OTModel.OT_APP4" Width="1.625" PointX="5.25" PointY="26.625" />
+        <EntityTypeShape EntityType="OTModel.OT_AUDIT" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="OTModel.OT_CYCLE" Width="1.5" PointX="8.75" PointY="2.625" />
+        <EntityTypeShape EntityType="OTModel.OT_CYCLE_PAYFILE" Width="1.5" PointX="11" PointY="3" />
+        <EntityTypeShape EntityType="OTModel.OT_EMP" Width="1.5" PointX="3.75" PointY="3.375" />
+        <EntityTypeShape EntityType="OTModel.OT_OFFSET" Width="1.5" PointX="5.25" PointY="18.25" />
+        <EntityTypeShape EntityType="OTModel.OT_ORG" Width="1.5" PointX="0.75" PointY="13.375" />
+        <EntityTypeShape EntityType="OTModel.OT_POSITION" Width="1.5" PointX="6" PointY="13.875" />
+        <EntityTypeShape EntityType="OTModel.OT_SHIFT" Width="1.5" PointX="6" PointY="4.875" />
+        <EntityTypeShape EntityType="OTModel.OT_TYPE" Width="1.5" PointX="6" PointY="9.5" />
+        <EntityTypeShape EntityType="OTModel.OT_WORK" Width="1.5" PointX="8.25" PointY="11.375" />
+        <EntityTypeShape EntityType="OTModel.OT_WORK_OFFSET" Width="1.5" PointX="10.5" PointY="15.875" />
+        <AssociationConnector Association="OTModel.OT_APP1_OT_ORG_FK" />
+        <AssociationConnector Association="OTModel.OT_WORK_OT_APP1_FK" />
+        <AssociationConnector Association="OTModel.OT_APP2_OT_ORG_FK" />
+        <AssociationConnector Association="OTModel.OT_WORK_OT_APP2_FK" />
+        <AssociationConnector Association="OTModel.OT_APP3_OT_ORG_FK" />
+        <AssociationConnector Association="OTModel.OT_APP4_OT_APP3_FK" />
+        <AssociationConnector Association="OTModel.OT_OFFSET_OT_APP3_FK" />
+        <AssociationConnector Association="OTModel.OT_AUDIT_OT_EMP_FK" />
+        <AssociationConnector Association="OTModel.OT_CYCLE_PAYFILE_FK" />
+        <AssociationConnector Association="OTModel.OT_OFFSET_OT_EMP_FK" />
+        <AssociationConnector Association="OTModel.OT_POSITION_OT_EMP_FK" />
+        <AssociationConnector Association="OTModel.OT_WORK_OT_EMP_FK" />
+        <AssociationConnector Association="OTModel.OT_OFFSET_OT_ORG_FK" />
+        <AssociationConnector Association="OTModel.OT_WORK_OFFSET_OT_OFFSET_FK" />
+        <AssociationConnector Association="OTModel.OT_POSITION_OT_ORG_FK" />
+        <AssociationConnector Association="OTModel.OT_WORK_OT_ORG_FK" />
+        <AssociationConnector Association="OTModel.OT_WORK_OT_SHIFT_FK" />
+        <AssociationConnector Association="OTModel.OT_WORK_OT_TYPE_FK" />
+        <AssociationConnector Association="OTModel.OT_WORK_OFFSET_OT_WORK_FK" />
+        <EntityTypeShape EntityType="OTModel.SYS_SEQ" Width="1.5" PointX="0.75" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
